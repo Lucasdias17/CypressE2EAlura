@@ -5,7 +5,7 @@ class Cadastro {
         cy.visit('https://3076-cypress-alurapic-front.vercel.app/#/home')
         cy.get('a[data-test="register"]').click()
     }
-    
+    const usuarios = require('.')
     preencherFormCadastro(){
         cy.get('input[ng-reflect-name="email"]').type('lucas@teste.com')
         cy.get('input[ng-reflect-name="fullName"]').type('Lucas Dias')
