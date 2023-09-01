@@ -1,0 +1,15 @@
+{
+  "name": "alurapic",
+  "version": "1.0.0",
+  "description": "Curso e2e da Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Lucas Dias",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "mochawesome": "^7.1.3"
+  }
+}

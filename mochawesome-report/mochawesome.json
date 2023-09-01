@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-30T13:14:51.811Z",
+    "end": "2023-08-30T13:14:54.881Z",
+    "duration": 3070,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40db6d6d-fe0e-4bdc-90e3-6dc7a10b7c81",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login_sucesso.cy.js",
+      "file": "cypress\\e2e\\Login_sucesso.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9acf72a9-fa41-46d2-bcaf-8be388ee2ba0",
+          "title": "Login de Sucesso",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar login",
+              "fullTitle": "Login de Sucesso Realizar login",
+              "timedOut": null,
+              "duration": 1826,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://3076-cypress-alurapic-front.vercel.app/#/home');\ncy.get('[data-test=\"loginUserName\"]').type('lucasdias');\ncy.get('[data-test=\"loginPassword\"]').type('lucasdias123');\ncy.get('[data-test=\"loginBtn\"]').click();\ncy.get('.navbar-light:nth-child(1) > div  > a.mr-1').should('have.text', 'lucasdias');",
+              "err": {},
+              "uuid": "bdad23a8-babd-4b62-a5c3-7bca20c32e17",
+              "parentUUID": "9acf72a9-fa41-46d2-bcaf-8be388ee2ba0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bdad23a8-babd-4b62-a5c3-7bca20c32e17"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
